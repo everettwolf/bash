@@ -73,8 +73,3 @@ function get_params {
     done
     check_params false
 }
-source <(curl -s http://example.com/foo)
-exit
-params=("-u:user" "-p:pass:true")
-get_params "$@"
-echo "User: $user, Pass: $pass"
